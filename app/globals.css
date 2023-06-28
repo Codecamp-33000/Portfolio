@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@font-face {
+  font-family: 'Hello Paris';
+  src: local('Hello Paris Script'), local('Hello-Paris-Script'),
+      url('HelloParisScript.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Butler';
+  src: local('Butler Light'), local('Butler-Light'),
+      url('Butler-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+body{
+  background-image: linear-gradient(#0F172A, #0D2B43);
+}
+.skill-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skill {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.outer {
+  height: 160px;
+  width: 160px;
+  padding: 40px;
+}
+.inner {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#number {
+  font-weight: 600px;
+  color: #cccccc;
+}
+Circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 10px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+circle:hover{
+  stroke: aqua;
+}
+.skill:hover{
+  animation-name: spin;
+  animation-duration: 1000ms;
+}
+@keyframes spin {
+  0% {
+      transform:rotate(0deg);
+  }
+  100% {
+      transform:rotate(360deg);
+  }
+}
+.Circle-1 {
+  animation: anim1 4s linear forwards;
+}
+.Circle-2 {
+  animation: anim2 4s linear forwards;
+}
+.Circle-3 {
+  animation: anim3 4s linear forwards;
+}
+.Circle-4 {
+  animation: anim4 4s linear forwards;
+}
+.Circle-5 {
+  animation: anim5 4s linear forwards;
+}
+.Circle-6 {
+  animation: anim6 4s linear forwards;
+}
+.Circle-7 {
+  animation: anim7 4s linear forwards;
+}
+.Circle-8 {
+  animation: anim8 4s linear forwards;
+}
+.circle-svg {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@keyframes anim1 {
+  100% {
+    stroke-dashoffset: 56.64;
+  }
+}
+@keyframes anim2 {
+  100% {
+    stroke-dashoffset: 141.6;
+  }
+}
+@keyframes anim3 {
+  100% {
+    stroke-dashoffset: 151.04;
+  }
+}
+@keyframes anim4 {
+  100% {
+    stroke-dashoffset: 236;
+  }
+}
+@keyframes anim5 {
+  100% {
+    stroke-dashoffset: 103.84;
+  }
+}
+@keyframes anim6 {
+  100% {
+    stroke-dashoffset: 132.16;
+  }
+}
+@keyframes anim7 {
+  100% {
+    stroke-dashoffset: 169.92;
+  }
+}
+@keyframes anim8 {
+  100% {
+    stroke-dashoffset: 56.64;
+  }
+}
+.loader{
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border:3px solid transparent;
+  border-top-color:#fff;
+  animation: loader 1s ease infinite;
+}
+@keyframes loader {
+  0%{
+    transform: rotate(0turn);
+  }
+  100%{
+    transform: rotate(1turn);
+  }
+}
