@@ -13,7 +13,7 @@ import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
 import { menuList } from "./menulist";
 import My from "../public/image/my.png";
-import Logo from "../public/image/logo.png";
+import Logo from "@/public/favicon.ico";
 import {
   AiFillFacebook,
   AiFillGithub,

@@ -3,8 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants.js";
-import Project1 from "../../public/image/project1.jpg";
-import Project2 from "../../public/image/project2.jpg";
+import Project1 from "../../public/image/project1.png";
 import ProjectCard from "./projectcard.jsx";
 const Projects = () => {
   return (
@@ -21,10 +20,7 @@ const Projects = () => {
       </h2>
       <div className="">
         <div className="w-full h-full grid grid-cols-1  md:grid-cols-2 gap-10 py-10">
-          <ProjectCard name='Ecommerce Website' image={Project1}/>
-          <ProjectCard name='Blog Website' image={Project2}/>
-          <ProjectCard name='Portfolio Website' image={Project1}/>
-          <ProjectCard name='Ecommerce Website' image={Project2}/>
+          <ProjectCard projectname='Ecommerce Website' name="Vaseline Online Shopping" image={Project1}/>
         </div>
       </div>
     </motion.div>

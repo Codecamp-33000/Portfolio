@@ -2,16 +2,18 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Image from "next/image";
-import { SiNextdotjs, SiReact, SiTailwindcss } from "react-icons/si";
-import { AiFillGithub } from "react-icons/ai";
-
+import { SiFigma, SiNextdotjs, SiReact, SiTailwindcss } from "react-icons/si";
+import { AiFillGithub, AiOutlineFundView } from "react-icons/ai";
+import { LuWebhook } from "react-icons/lu";
 const ProjectCard = (props) => {
   const icon = "text-white flex justify-center items-center";
   return (
-    <div className="w-full h-full group relative overflow-hidden border-2 border-white/50 rounded-xl">
+    <div>
+      <li><a href="https://e-commerce-me.vercel.app/" className="text-2xl font-HelloParisScript pb-10">{props.projectname}</a></li>
+      <div className="w-full h-full group relative overflow-hidden border-2 border-white/50 rounded-xl my-4">
       <div className="group-hover:bg-black/70 w-full h-full absolute z-30 transition-all duration-300"></div>
       <Image
-        className=" group-hover:scale-125 transition-all duration-500"
+        className="w-full h-full group-hover:scale-125 transition-all duration-500"
         src={props.image}
       />
       <div>
@@ -31,17 +33,24 @@ const ProjectCard = (props) => {
               <SiTailwindcss size={25} />
             </span>
             <span className={icon}>
-              <img width={25} height={25} src="" alt="" />
-            </span>
-            <span className={icon}>
-              <img width={25} height={25} src="" alt="" />
+              <SiFigma size={25} />
             </span>
           </div>
-          <button className="flex justify-center items-center gap-4 py-2 px-4 bg-black text-[#ccc]">
-            <AiFillGithub size={30} /> code
-          </button>
+          <div className="flex items-center gap-6">
+            <a href="https://e-commerce-me.vercel.app/">
+              <button className="flex justify-center items-center gap-4 py-2 px-4 border-2 rounded-xl text-[#ccc]">
+                <LuWebhook size={30} /> Open
+              </button>
+            </a>
+            <a href="https://github.com/Codecamp-33000/e-commerce.git">
+              <button className="flex justify-center items-center gap-4 py-2 px-4 bg-black text-[#ccc]">
+                <AiFillGithub size={30} /> code
+              </button>
+            </a>
+          </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
