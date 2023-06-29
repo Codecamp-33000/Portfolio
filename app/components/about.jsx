@@ -2,11 +2,10 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import Main from "./main";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants.js";
-import My from "../../public/my.png";
+import My from "../../public/image/my.png";
 import {
   AiFillFacebook,
   AiFillGithub,

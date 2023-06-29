@@ -1,13 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants.js";
-import Project1 from "../../public/project1.jpg";
-import Project2 from "../../public/project2.jpg";
-import { AiFillGithub } from "react-icons/ai";
-import { SiNextdotjs, SiReact, SiTailwindcss } from "react-icons/si";
+import Project1 from "../../public/image/project1.jpg";
+import Project2 from "../../public/image/project2.jpg";
 import ProjectCard from "./projectcard.jsx";
 const Projects = () => {
   return (

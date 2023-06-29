@@ -1,11 +1,10 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import "../globals.css";
 import Image from "next/image";
-import Figma from "../../public/figma.png";
-import AdobeXD from "../../public/adobeXd.png";
-import AdobeIndesign from "../../public/AdobeIndesign.png";
-import AdobePhotoshop from "../../public/AdobePhotoshop.png";
+import Figma from "../../public/image/figma.png";
+import AdobeXD from "../../public/image/adobeXd.png";
+import AdobeIndesign from "../../public/image/AdobeIndesign.png";
+import AdobePhotoshop from "../../public/image/AdobePhotoshop.png";
 import Circle from "./circle";
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants.js";

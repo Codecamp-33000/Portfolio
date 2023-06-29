@@ -2,10 +2,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import Image from "next/image";
-import myImg from "../../public/my-image.png";
+import myImg from "../../public/image/my-image.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants.js";
-import Link from "next/link";
 // eslint-disable-next-line react/display-name
 function Main() {
   return (

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/alt-text */
 "use client";
-import "./globals.css";
+import "@/public/globals.css";
 import Image from "next/image";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import About from "./components/about";
@@ -12,8 +12,8 @@ import Main from "./components/main";
 import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
 import { menuList } from "./menulist";
-import My from "../public/my.png";
-import Logo from "../public/logo.png";
+import My from "../public/image/my.png";
+import Logo from "../public/image/logo.png";
 import {
   AiFillFacebook,
   AiFillGithub,

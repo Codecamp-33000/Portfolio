@@ -1,5 +1,4 @@
 import React from "react";
-import "../globals.css";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
