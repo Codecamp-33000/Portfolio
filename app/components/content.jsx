@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "./variants.js";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import AiPhoto from "../../public/image/ai-photo 1.png";
+import AiPhoto from "../../public/image/ai-photo1.png";
 import { AiOutlineCheck } from "react-icons/ai";
 const Details = () => {
   const [click, setClick] = useState(false);
